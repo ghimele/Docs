@@ -1,0 +1,32 @@
+---
+title: My Awesome Docs
+description: The central documentation hub for all my projects.
+template: splash
+
+hero:
+  tagline: The central documentation hub for all my projects.
+  actions:
+    - text: Get Started
+      link: /homelab/
+      variant: primary
+    - text: View on GitHub
+      link: https://github.com/ghimele/Docs
+      variant: secondary
+---
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+## 🚀 Quick Links
+
+Browse the documentation for each project.
+
+<CardGrid>
+  <LinkCard title="Home Lab" icon="rocket" href="/homelab">
+  Documentation for my Homelab Configuration repository.
+  </LinkCard>
+  <LinkCard  title="Helm Charts" icon="rocket" href="/helm-charts">
+    Documentation for the Helm Chart I've implemented.
+  </LinkCard>
+  <LinkCard title="ESPHome" icon="puzzle" href="/esphome">
+    Documentation for my ESPHome devices.
+  </LinkCard>
+</CardGrid>
